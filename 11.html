@@ -5,23 +5,23 @@
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script type="text/javascript">
   function sendEmail() {
-   Email.send({
-    Host : "smtp.gmail.com",
-    Username : "mina324.mz@gmail.com",
-    Password : "ej3g4cji4xu4",
-    To : 'ctnana324@gmail.com',
-    From : "mina324.mz@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-); 
+      Email.send({
+      Host : "smtp.gmail.com",
+      Username : "mina324.mz@gmail.com",
+      Password : "ej3g4cji4xu4",
+      To : 'ctnana324@gmail.com',
+      From : "mina324.mz@gmail.com",
+      Subject : "This is the subject",
+      Body : "And this is the body"
+  }).then(
+    message => alert(message)
+  );
   }
 </script>
 </head>
 <body>
 <form method="post">
-<input type="button" value="Send Mail"onclick="sendMail()" />
+<input type="button" value="Send Mail"onclick="sendEmail()" />
 </form>
 </body>
 </html>
